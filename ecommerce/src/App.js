@@ -1,12 +1,12 @@
-import React from "react";
-import CARD from "./components/cards";
+import Sidebar from "./components/sidebar";
+import { BrowserRouter as Router } from "react-router-dom";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <CARD />
-    </div>
+    <Router>
+      <Sidebar />
+    </Router>
   );
-};
+}
 
 export default App;
