@@ -19,6 +19,7 @@ const Cards = () => {
                 <Card.Body>
                   <Card.Title>{item.name}</Card.Title>
                   <Card.Text>{item.description}</Card.Text>
+                  <Card.Footer>{item.price}</Card.Footer>
                 </Card.Body>
               </Card>
             </Col>
