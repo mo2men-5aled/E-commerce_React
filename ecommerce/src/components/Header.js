@@ -1,55 +1,29 @@
-import logo from "./assets/brand/1.png";
+import logo from "../components/assets/brand/1.png";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+
 import HeaderItems from "./HeaderItems";
+
 const Header = () => {
   return (
-    <nav
-      className="navbar navbar-expand-lg"
-      style={{ backgroundColor: "#F27B57" }}
-    >
-      <div className="container-fluid">
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a className="navbar-brand" href="/">
+    <>
+      <Navbar bg="dark" expand="sm" variant="dark">
+        <Container>
+          <Navbar.Brand href="#">
             <img
               src={logo}
-              alt="Logo"
-              width="50"
-              height="50"
-              className="d-inline-block "
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
             />
-            <p
-              className="nav d-inline-block"
-              style={{ textAlign: "center", marginLeft: "10px" }}
-            >
-              Navbar
-            </p>
-          </a>
-
+            Navbar
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="offcanvasNavbar-expand-sm" />
           <HeaderItems />
-
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-light" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
+        </Container>
+      </Navbar>
+    </>
   );
 };
 

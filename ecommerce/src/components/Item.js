@@ -1,11 +1,7 @@
+import Nav from "react-bootstrap/Nav";
+
 const Item = (props) => {
-  return (
-    <li className="nav-item">
-      <a className="nav-link" href={props.route}>
-        {props.txt}
-      </a>
-    </li>
-  );
+  return <Nav.Link href="#action1">{props.txt}</Nav.Link>;
 };
 
 export default Item;

@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": "0",
+      "name": "dress",
+      "price": "9$",
+      "description": "pla pla pla pla pla",
+      "image": "https://picsum.photos/id/400/300/200"
+    },
+    {
+      "id": "1",
+      "name": "T-shirt",
+      "price": "5$",
+      "description": "pla pla pla pla pla",
+      "image": "https://picsum.photos/id/208/300/200"
+    },
+    {
+      "id": "2",
+      "name": "Jacket",
+      "price": "25$",
+      "description": "pla pla pla pla pla",
+      "image": "https://picsum.photos/id/308/300/200"
+    }
+  ]
+}
