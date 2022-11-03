@@ -2,26 +2,29 @@ import logo from "./assets/brand/1.png";
 import HeaderItems from "./HeaderItems";
 const Header = () => {
   return (
-    <nav class="navbar navbar-expand-lg" style={{ backgroundColor: "#F27B57" }}>
-      <div class="container-fluid">
+    <nav
+      className="navbar navbar-expand-lg"
+      style={{ backgroundColor: "#F27B57" }}
+    >
+      <div className="container-fluid">
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo01"
           aria-controls="navbarTogglerDemo01"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="/">
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a className="navbar-brand" href="/">
             <img
               src={logo}
               alt="Logo"
               width="50"
               height="50"
-              class="d-inline-block "
+              className="d-inline-block "
             />
             <p
               className="nav d-inline-block"
@@ -33,14 +36,14 @@ const Header = () => {
 
           <HeaderItems />
 
-          <form class="d-flex" role="search">
+          <form className="d-flex" role="search">
             <input
-              class="form-control me-2"
+              className="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-light" type="submit">
+            <button className="btn btn-light" type="submit">
               Search
             </button>
           </form>
