@@ -20,6 +20,27 @@
       "price": "25$",
       "description": "pla pla pla pla pla",
       "image": "https://picsum.photos/id/308/300/200"
+    },
+    {
+      "id": "3",
+      "name": "Under Shirt",
+      "price": "15$",
+      "description": "pla pla pla pla pla",
+      "image": "https://picsum.photos/id/401/300/200"
+    },
+    {
+      "id": "4",
+      "name": "High coll",
+      "price": "55$",
+      "description": "pla pla pla pla pla",
+      "image": "https://picsum.photos/id/402/300/200"
+    },
+    {
+      "id": "5",
+      "name": "leather Jacket",
+      "price": "205$",
+      "description": "pla pla pla pla pla",
+      "image": "https://picsum.photos/id/408/300/200"
     }
   ]
 }
