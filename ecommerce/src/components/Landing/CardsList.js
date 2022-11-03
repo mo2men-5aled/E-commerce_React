@@ -3,11 +3,13 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 
+import Text from "../../components/Text";
 import Data from "../../Data/db.json";
 const Cards = () => {
   const items = Data.items;
   return (
     <Container>
+      <Text message="Latest Products" />
       <Row xs={2} md={3} lg={4} className="g-5">
         {items.map((item) => {
           return (
