@@ -7,6 +7,7 @@ import Summary from "./components/Routes/Summary";
 import CheckOut from "./components/Routes/Checkout";
 
 import Header from "./components/Header";
+import Footer from "./components/Landing/Footer";
 
 function App() {
   return (
@@ -15,10 +16,11 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Landing />} />
         <Route path="/list" exact element={<ProductList />} />
-        <Route path="/SingleProduct" exact element={<ViewProduct />} />
+        <Route path="/SingleProduct/:id" exact element={<ViewProduct />} />
         <Route path="/summary" exact element={<Summary />} />
         <Route path="/checkout" exact element={<CheckOut />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

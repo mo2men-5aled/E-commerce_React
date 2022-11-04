@@ -41,6 +41,48 @@
       "price": "205$",
       "description": "pla pla pla pla pla",
       "image": "https://picsum.photos/id/408/300/200"
+    },
+    {
+      "id": "6",
+      "name": "Skirt",
+      "price": "19$",
+      "description": "pla pla pla pla pla",
+      "image": "https://picsum.photos/id/500/300/200"
+    },
+    {
+      "id": "7",
+      "name": "T-shirt cotton",
+      "price": "5$",
+      "description": "pla pla pla pla pla",
+      "image": "https://picsum.photos/id/508/300/200"
+    },
+    {
+      "id": "8",
+      "name": "wool Jacket",
+      "price": "215$",
+      "description": "pla pla pla pla pla",
+      "image": "https://picsum.photos/id/608/300/200"
+    },
+    {
+      "id": "9",
+      "name": "Mini Shirt",
+      "price": "15$",
+      "description": "pla pla pla pla pla",
+      "image": "https://picsum.photos/id/407/300/200"
+    },
+    {
+      "id": "10",
+      "name": "Trousers",
+      "price": "50$",
+      "description": "pla pla pla pla pla",
+      "image": "https://picsum.photos/id/412/300/200"
+    },
+    {
+      "id": "11",
+      "name": "cut Jacket",
+      "price": "25$",
+      "description": "pla pla pla pla pla",
+      "image": "https://picsum.photos/id/428/300/200"
     }
   ]
 }

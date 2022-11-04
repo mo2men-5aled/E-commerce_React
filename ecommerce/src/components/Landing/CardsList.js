@@ -3,6 +3,8 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 
+import { Link } from "react-router-dom";
+
 import Text from "../../components/Text";
 import Data from "../../Data/db.json";
 const Cards = () => {
@@ -17,7 +19,9 @@ const Cards = () => {
               <Card>
                 <Card.Img variant="top" src={item.image} />
                 <Card.Body>
-                  <Card.Title>{item.name}</Card.Title>
+                  <Link to={`/SingleProduct/${item.id}`}>
+                    <Card.Title>{item.name}</Card.Title>
+                  </Link>
                   <Card.Text>{item.description}</Card.Text>
                   <Card.Footer>{item.price}</Card.Footer>
                 </Card.Body>
