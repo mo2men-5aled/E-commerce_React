@@ -12,7 +12,7 @@ const Cards = () => {
   return (
     <Container>
       <Text message="Latest Products" />
-      <Row xs={2} md={3} lg={4} className="g-5">
+      <Row xs={2} md={3} lg={4} className="g-3">
         {items.map((item) => {
           return (
             <Col key={item.id}>

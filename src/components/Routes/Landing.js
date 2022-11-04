@@ -4,7 +4,9 @@ import BigCards from "../Landing/BigCards";
 const Landing = () => {
   return (
     <div>
-      <Carousal />
+      <div>
+        <Carousal />
+      </div>
 
       <Cards />
 
