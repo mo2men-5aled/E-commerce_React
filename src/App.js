@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Landing from "./components/Routes/Landing";
 import ProductList from "./components/Routes/ProductsList";
@@ -11,7 +11,7 @@ import Footer from "./components/Landing/Footer";
 
 function App() {
   return (
-    <HashRouter>
+    <>
       <Header />
       <Routes>
         <Route path="/" exact element={<Landing />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path="/checkout" exact element={<CheckOut />} />
       </Routes>
       <Footer />
-    </HashRouter>
+    </>
   );
 }
 
