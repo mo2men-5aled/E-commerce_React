@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import Landing from "./components/Routes/Landing";
 import ProductList from "./components/Routes/ProductsList";
@@ -11,17 +11,17 @@ import Footer from "./components/Landing/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Routes>
-        <Route path="/E-commerce_React" exact element={<Landing />} />
+        <Route path="/" exact element={<Landing />} />
         <Route path="/list" exact element={<ProductList />} />
         <Route path="/SingleProduct/:id" exact element={<ViewProduct />} />
         <Route path="/summary" exact element={<Summary />} />
         <Route path="/checkout" exact element={<CheckOut />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
