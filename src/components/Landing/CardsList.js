@@ -5,13 +5,11 @@ import Container from "react-bootstrap/Container";
 
 import { Link } from "react-router-dom";
 
-import Text from "../../components/Text";
 import Data from "../../Data/db.json";
 const Cards = () => {
   const items = Data.items;
   return (
     <Container>
-      <Text message="Latest Products" />
       <Row xs={2} md={3} lg={4} className="g-3">
         {items.map((item) => {
           return (

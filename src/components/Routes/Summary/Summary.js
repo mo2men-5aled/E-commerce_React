@@ -74,7 +74,7 @@ const Summary = () => {
           </div>
         </div>
       </div>
-
+      <Text message="Latest Products" />
       <Cards />
     </div>
   );
