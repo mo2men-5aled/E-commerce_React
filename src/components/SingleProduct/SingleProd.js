@@ -56,7 +56,7 @@ const ViewProduct = () => {
                       </Form.Group>
                       <Button
                         as={Link}
-                        to={`/summary/${item.id}`}
+                        to={`#/summary/${item.id}`}
                         variant="primary"
                         type="submit"
                       >

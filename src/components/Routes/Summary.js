@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import Data from "../../Data/db.json";
 import Text from "../Text";
 
-import ListGroup from "react-bootstrap/ListGroup";
 import Table from "react-bootstrap/Table";
 
 const Summary = () => {
