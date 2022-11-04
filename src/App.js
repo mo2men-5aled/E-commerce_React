@@ -14,11 +14,15 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" exact element={<Landing />} />
-        <Route path="/list" exact element={<ProductList />} />
-        <Route path="/SingleProduct/:id" exact element={<ViewProduct />} />
-        <Route path="/summary" exact element={<Summary />} />
-        <Route path="/checkout" exact element={<CheckOut />} />
+        <Route path="/E-commerce_React" exact element={<Landing />} />
+        <Route path="/E-commerce_React/list" exact element={<ProductList />} />
+        <Route
+          path="/E-commerce_React/SingleProduct/:id"
+          exact
+          element={<ViewProduct />}
+        />
+        <Route path="/E-commerce_React/summary" exact element={<Summary />} />
+        <Route path="/E-commerce_React/checkout" exact element={<CheckOut />} />
       </Routes>
       <Footer />
     </BrowserRouter>
