@@ -21,7 +21,7 @@ const ProductList = () => {
               </div>
               <div className="col">
                 <div className="card-body">
-                  <Link to={`#/SingleProduct/${item.id}`}>
+                  <Link to={`/SingleProduct/${item.id}`}>
                     <h5 className="card-title">{item.name}</h5>
                   </Link>
 

@@ -1,8 +1,10 @@
 import { useParams } from "react-router-dom";
-import Data from "../../Data/db.json";
-import Text from "../Text";
+import Data from "../../../Data/db.json";
+import Text from "../../Text";
 
 import Table from "react-bootstrap/Table";
+import { Cart } from "react-bootstrap-icons";
+import Cards from "../../Landing/CardsList";
 
 const Summary = () => {
   const items = Data.items;
@@ -13,7 +15,10 @@ const Summary = () => {
 
   return (
     <div className="container" style={{ textAlign: "center" }}>
-      <Text message="Your Cart" />
+      <div className="row pt-3">
+        <Cart size={100} />
+        <Text message="Your Cart" />
+      </div>
       <div className="row">
         <div className="card p-3 col-md-8">
           <Table>
@@ -69,6 +74,8 @@ const Summary = () => {
           </div>
         </div>
       </div>
+
+      <Cards />
     </div>
   );
 };
