@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import Data from "../../Data/db.json";
 
-import Tabbs from "../SingleProduct/tabs";
+import Tabbs from "./tabs";
 
 import Text from "../Text";
 const ViewProduct = () => {

@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Landing from "./components/Routes/Landing";
 import ProductList from "./components/Routes/ProductsList";
-import ViewProduct from "./components/Routes/SingleProd";
+import ViewProduct from "../src/components/SingleProduct/SingleProd";
 import Summary from "./components/Routes/Summary";
 import CheckOut from "./components/Routes/Checkout";
 
