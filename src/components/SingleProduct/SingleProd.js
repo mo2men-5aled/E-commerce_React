@@ -1,6 +1,12 @@
 import { useParams } from "react-router-dom";
 import Data from "../../Data/db.json";
 
+import { Link } from "react-router-dom";
+
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import Accordion from "react-bootstrap/Accordion";
+
 import Tabbs from "./tabs";
 
 import Text from "../Text";
@@ -24,17 +30,42 @@ const ViewProduct = () => {
           </div>
           <div className="col-md-8">
             <div className="card-body">
-              <h5 className="card-title" style={{ fontSize: "50px" }}>
+              <h5 className="card-title" style={{ fontSize: "40px" }}>
                 {item.name}
               </h5>
-              <p className="card-text" style={{ fontSize: "40px" }}>
+              <p className="card-text" style={{ fontSize: "20px" }}>
                 {item.description}
               </p>
               <p className="card-text">
-                <small className="text-muted" style={{ fontSize: "30px" }}>
+                <small className="text-muted" style={{ fontSize: "15px" }}>
                   {item.price}
                 </small>
               </p>
+
+              <Accordion>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>Add to cart ..?</Accordion.Header>
+                  <Accordion.Body>
+                    <Form>
+                      <Form.Group
+                        className="mb-3"
+                        controlId="formBasicPassword"
+                      >
+                        <Form.Label>Quantity</Form.Label>
+                        <Form.Control placeholder="Type the Quantity you want :)" />
+                      </Form.Group>
+                      <Button
+                        as={Link}
+                        to="/summary"
+                        variant="primary"
+                        type="submit"
+                      >
+                        Add
+                      </Button>
+                    </Form>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
             </div>
           </div>
         </div>
