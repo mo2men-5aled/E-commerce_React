@@ -1,10 +1,13 @@
 {
+  "homepage": "https://github.com/mo2men-5aled/E-commerce_React.git",
   "name": "e-commerce_react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -15,6 +18,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mo2men-5aled/E-commerce_React/issues"
-  },
-  "homepage": "https://github.com/mo2men-5aled/E-commerce_React#readme"
+  }
 }
