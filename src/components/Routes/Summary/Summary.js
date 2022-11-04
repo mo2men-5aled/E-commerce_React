@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Data from "../../../Data/db.json";
 import Text from "../../Text";
 
 import Table from "react-bootstrap/Table";
+import Button from "react-bootstrap/Button";
 import { Cart } from "react-bootstrap-icons";
 import Cards from "../../Landing/CardsList";
 
@@ -73,6 +74,17 @@ const Summary = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="row">
+        <Button
+          as={Link}
+          to={`/checkout`}
+          variant="dark"
+          type="submit"
+          className="mt-3"
+        >
+          Checkout...?
+        </Button>
       </div>
       <Text message="Latest Products" />
       <Cards />
