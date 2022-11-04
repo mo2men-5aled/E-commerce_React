@@ -1,4 +1,6 @@
 import { useParams } from "react-router-dom";
+import { useState } from "react";
+
 import Data from "../../Data/db.json";
 
 import { Link } from "react-router-dom";
@@ -14,6 +16,8 @@ const ViewProduct = () => {
   const items = Data.items;
   const params = useParams();
   const item = items[params.id];
+
+  const [quantity, setQuantity] = useState(0);
 
   return (
     <div className="container">
@@ -52,11 +56,19 @@ const ViewProduct = () => {
                         controlId="formBasicPassword"
                       >
                         <Form.Label>Quantity</Form.Label>
-                        <Form.Control placeholder="Type the Quantity you want :)" />
+                        <Form.Control
+                          required
+                          placeholder="Type the Quantity you want :)"
+                          value={quantity}
+                          onChange={(e) => {
+                            setQuantity(e.target.value);
+                            console.log(quantity);
+                          }}
+                        />
                       </Form.Group>
                       <Button
                         as={Link}
-                        to={`/summary/${item.id}`}
+                        to={`/summary/${item.id}/${quantity}`}
                         variant="primary"
                         type="submit"
                       >

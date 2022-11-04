@@ -9,7 +9,7 @@ const Summary = () => {
   const params = useParams();
   const item = items[params.id];
   const ProductPrice = item.price.replace("$", "");
-  const Quantity = 2;
+  const Quantity = params.amount;
 
   return (
     <div className="container" style={{ textAlign: "center" }}>
@@ -30,7 +30,7 @@ const Summary = () => {
                 <td>1</td>
                 <td>{item.name}</td>
                 <td>{Quantity}</td>
-                <td> {Quantity * ProductPrice}</td>
+                <td> {ProductPrice}</td>
               </tr>
 
               <tr></tr>
@@ -53,7 +53,7 @@ const Summary = () => {
                 <tbody>
                   <tr>
                     <td>items</td>
-                    <td>2</td>
+                    <td>{Quantity}</td>
                   </tr>
                   <tr>
                     <td>Price</td>
@@ -61,7 +61,7 @@ const Summary = () => {
                   </tr>
                   <tr>
                     <td>Total</td>
-                    <td>{ProductPrice * Quantity}</td>
+                    <td>{ProductPrice * Quantity} $</td>
                   </tr>
                 </tbody>
               </Table>

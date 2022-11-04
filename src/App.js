@@ -17,7 +17,7 @@ function App() {
         <Route path="/" exact element={<Landing />} />
         <Route path="/list" exact element={<ProductList />} />
         <Route path="/SingleProduct/:id" exact element={<ViewProduct />} />
-        <Route path="/summary/:id" exact element={<Summary />} />
+        <Route path="/summary/:id/:amount" exact element={<Summary />} />
         <Route path="/checkout" exact element={<CheckOut />} />
       </Routes>
       <Footer />
