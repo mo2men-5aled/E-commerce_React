@@ -67,17 +67,17 @@ const Summary = () => {
           </div>
         </div>
       </div>
-      <div className="row">
-        <Button
-          as={Link}
-          to={`/checkout`}
-          variant="dark"
-          type="submit"
-          className="mt-3"
-        >
-          Checkout...?
-        </Button>
-      </div>
+
+      <Button
+        as={Link}
+        to={`/checkout`}
+        variant="dark"
+        type="submit"
+        style={{ width: "100%", marginTop: "20px" }}
+      >
+        Checkout...?
+      </Button>
+
       <Text message="Latest Products" />
       <Cards />
     </div>
