@@ -60,16 +60,16 @@ const ViewProduct = () => {
                           required
                           placeholder="Type the Quantity you want :)"
                           value={quantity}
+                          type="number"
                           onChange={(e) => {
                             setQuantity(e.target.value);
-                            console.log(quantity);
                           }}
                         />
                       </Form.Group>
                       <Button
                         as={Link}
                         to={`/summary/${item.id}/${quantity}`}
-                        variant="primary"
+                        variant="dark"
                         type="submit"
                       >
                         Add
