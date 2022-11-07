@@ -1,7 +1,6 @@
 import Item from "./Item";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
 const HeaderItems = () => {
@@ -13,7 +12,7 @@ const HeaderItems = () => {
     >
       <Offcanvas.Header closeButton>
         <Offcanvas.Title id="offcanvasNavbarLabel-expand-sm">
-          Offcanvas
+          SideBar
         </Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body>
@@ -21,14 +20,7 @@ const HeaderItems = () => {
           <Item path="#/" txt="Home" />
 
           <Item path="#/list" txt="Our Products" />
-          <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown-expand-sm">
-            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action5">
-              Something else here
-            </NavDropdown.Item>
-          </NavDropdown>
+          <Item path="#/about" txt="About Us" />
         </Nav>
       </Offcanvas.Body>
     </Navbar.Offcanvas>
