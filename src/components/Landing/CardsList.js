@@ -14,12 +14,15 @@ const Cards = () => {
         {items.map((item) => {
           return (
             <Col key={item.id}>
-              <Card>
+              <Card
+                as={Link}
+                to={`/SingleProduct/${item.id}`}
+                style={{ color: "black", textDecoration: "none" }}
+              >
                 <Card.Img variant="top" src={item.image} />
                 <Card.Body>
-                  <Link to={`/SingleProduct/${item.id}`}>
-                    <Card.Title>{item.name}</Card.Title>
-                  </Link>
+                  <Card.Title>{item.name}</Card.Title>
+
                   <Card.Text>{item.description}</Card.Text>
                   <Card.Footer>{item.price}</Card.Footer>
                 </Card.Body>
