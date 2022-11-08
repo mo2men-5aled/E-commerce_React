@@ -3,84 +3,84 @@
     {
       "id": "0",
       "name": "dress",
-      "price": "9$",
+      "price": "9 $",
       "description": "pla pla pla pla pla",
       "image": "https://picsum.photos/id/400/300/200"
     },
     {
       "id": "1",
       "name": "T-shirt",
-      "price": "5$",
+      "price": "5 $",
       "description": "pla pla pla pla pla",
       "image": "https://picsum.photos/id/208/300/200"
     },
     {
       "id": "2",
       "name": "Jacket",
-      "price": "25$",
+      "price": "25 $",
       "description": "pla pla pla pla pla",
       "image": "https://picsum.photos/id/308/300/200"
     },
     {
       "id": "3",
       "name": "Under Shirt",
-      "price": "15$",
+      "price": "15 $",
       "description": "pla pla pla pla pla",
       "image": "https://picsum.photos/id/401/300/200"
     },
     {
       "id": "4",
       "name": "High coll",
-      "price": "55$",
+      "price": "55 $",
       "description": "pla pla pla pla pla",
       "image": "https://picsum.photos/id/402/300/200"
     },
     {
       "id": "5",
       "name": "leather Jacket",
-      "price": "205$",
+      "price": "205 $",
       "description": "pla pla pla pla pla",
       "image": "https://picsum.photos/id/408/300/200"
     },
     {
       "id": "6",
       "name": "Skirt",
-      "price": "19$",
+      "price": "19 $",
       "description": "pla pla pla pla pla",
       "image": "https://picsum.photos/id/500/300/200"
     },
     {
       "id": "7",
       "name": "T-shirt cotton",
-      "price": "5$",
+      "price": "5 $",
       "description": "pla pla pla pla pla",
       "image": "https://picsum.photos/id/508/300/200"
     },
     {
       "id": "8",
       "name": "wool Jacket",
-      "price": "215$",
+      "price": "215 $",
       "description": "pla pla pla pla pla",
       "image": "https://picsum.photos/id/608/300/200"
     },
     {
       "id": "9",
       "name": "Mini Shirt",
-      "price": "15$",
+      "price": "15 $",
       "description": "pla pla pla pla pla",
       "image": "https://picsum.photos/id/407/300/200"
     },
     {
       "id": "10",
       "name": "Trousers",
-      "price": "50$",
+      "price": "50 $",
       "description": "pla pla pla pla pla",
       "image": "https://picsum.photos/id/412/300/200"
     },
     {
       "id": "11",
       "name": "cut Jacket",
-      "price": "25$",
+      "price": "25 $",
       "description": "pla pla pla pla pla",
       "image": "https://picsum.photos/id/428/300/200"
     }
